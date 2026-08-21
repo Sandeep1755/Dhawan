@@ -1,0 +1,203 @@
+/* ==========================================================================
+   DHAWAN HOSPITAL - RESPONSIVE STYLES (PREMIUM EDITION)
+   ========================================================================== */
+
+/* Large Desktop (>= 1280px) */
+@media (min-width: 1280px) {
+  .facilities-luxury-grid {
+    gap: var(--spacing-8);
+  }
+}
+
+/* Tablet & Smaller Desktop (< 1024px) */
+@media (max-width: 1023px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: var(--spacing-8) var(--spacing-6);
+    border-bottom: 1px solid var(--border-light);
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform var(--transition-normal), opacity var(--transition-normal);
+    z-index: 99;
+    overflow-y: auto;
+  }
+
+  .main-nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-6);
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: var(--font-size-lg);
+    width: 100%;
+    padding: var(--spacing-2) 0;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .header-actions .btn-primary {
+    display: none;
+  }
+
+  /* Hero */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-10);
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-trust-bar {
+    justify-content: center;
+  }
+
+  .floating-stat-1 {
+    left: 0;
+    top: 5%;
+  }
+
+  .floating-stat-2 {
+    right: 0;
+    bottom: 5%;
+  }
+
+  /* Triage Grid */
+  .triage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Facilities Grid */
+  .facilities-luxury-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Storytelling Grid */
+  .storytelling-luxury-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+  }
+
+  /* Department & Doctor Grids */
+  .departments-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .doctors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer */
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile Devices (< 768px) */
+@media (max-width: 767px) {
+  .top-bar-left {
+    display: none;
+  }
+
+  .top-bar-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .triage-section {
+    margin-top: -1.5rem;
+  }
+
+  .triage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .facilities-luxury-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .departments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-3);
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-dialog {
+    max-height: 95vh;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .floating-stat-card {
+    padding: var(--spacing-3);
+  }
+
+  .stat-value {
+    font-size: var(--font-size-xl);
+  }
+}

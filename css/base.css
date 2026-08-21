@@ -1,0 +1,202 @@
+/* ==========================================================================
+   DHAWAN HOSPITAL - BASE & TYPOGRAPHY STYLES (PREMIUM EDITION)
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+  line-height: var(--line-height-normal);
+  overflow-x: clip;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display);
+  color: var(--color-primary-950);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-snug);
+  letter-spacing: -0.025em;
+}
+
+h1 { font-size: clamp(2.4rem, 4.5vw + 1rem, var(--font-size-6xl)); }
+h2 { font-size: clamp(1.85rem, 3vw + 0.8rem, var(--font-size-4xl)); }
+h3 { font-size: clamp(1.25rem, 1.8vw + 0.4rem, var(--font-size-2xl)); }
+h4 { font-size: var(--font-size-xl); }
+h5 { font-size: var(--font-size-lg); }
+h6 { font-size: var(--font-size-base); }
+
+p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-4);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--color-accent-600);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent-500);
+}
+
+img, svg, picture, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Focus States */
+:focus-visible {
+  outline: 2px solid var(--color-accent-500);
+  outline-offset: 3px;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: var(--spacing-4);
+  background: var(--color-primary-900);
+  color: var(--color-text-inverse);
+  padding: var(--spacing-3) var(--spacing-6);
+  border-radius: var(--radius-md);
+  z-index: 9999;
+  font-weight: var(--font-weight-semibold);
+  transition: top var(--transition-fast);
+}
+
+.skip-to-content:focus {
+  top: var(--spacing-4);
+}
+
+/* Containers */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 3vw, 2.5rem);
+  padding-right: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+/* Luxury Gradients & Badges */
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-primary-600) 0%, var(--color-accent-500) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--color-gold-500) 0%, var(--color-gold-300) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-accent-600);
+  margin-bottom: var(--spacing-3);
+  padding: 0.35rem 0.95rem;
+  background: var(--color-accent-100);
+  border-radius: var(--radius-full);
+  width: fit-content;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+}
+
+.section-label.gold {
+  background: var(--color-gold-50);
+  color: var(--color-gold-600);
+  border-color: var(--border-gold);
+}
+
+.section-label.dark {
+  background: rgba(14, 165, 233, 0.12);
+  color: var(--color-accent-300);
+  border: 1px solid rgba(14, 165, 233, 0.25);
+}
+
+.section-title {
+  margin-bottom: var(--spacing-4);
+}
+
+.section-description {
+  font-size: var(--font-size-lg);
+  max-width: 680px;
+  color: var(--color-text-secondary);
+}
+
+.section-header {
+  margin-bottom: var(--spacing-12);
+}
+
+.section-header.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-padding {
+  padding-top: clamp(4rem, 7vw, 6.5rem);
+  padding-bottom: clamp(4rem, 7vw, 6.5rem);
+}
+
+/* Pure CSS Smooth Reveal Classes */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

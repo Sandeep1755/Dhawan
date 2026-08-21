@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book Doctor Consultation Online - Schedule OPD appointments or video teleconsultations with senior specialist doctors at Dhawan Hospital.">
+  <meta name="keywords" content="Dhawan Hospital Appointment, Book Doctor Panchkula, Online Hospital OPD Booking">
+  <meta name="theme-color" content="#07172e">
+
+  <title>Book Doctor Consultation | Dhawan Hospital</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true"></div>
+  <div class="cursor-label" aria-hidden="true"></div>
+
+  <!-- Top Emergency Bar -->
+  <aside class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <div class="emergency-ticker">
+          <span class="emergency-dot"></span>
+          <span>24/7 Trauma & Emergency: <strong>+91 (0172) 256-7890 / 1066</strong></span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-link">OPD Hours: Mon - Sat (8:00 AM - 8:00 PM)</span>
+        <a href="contact.html" class="top-bar-link">Hospital Location & Maps</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="site-brand">
+        <div class="brand-crest">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M2 12h20M7 7l10 10M17 7L7 17"></path></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">DHAWAN HOSPITAL</span>
+          <span class="brand-tagline">Super Speciality Care</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+          <li><a href="departments.html" class="nav-link">Departments</a></li>
+          <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+          <li><a href="patient-journey.html" class="nav-link">Patient Guide</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:1066" class="btn-header-emergency">
+          <span>Emergency 24x7</span>
+        </a>
+        <a href="appointment.html" class="btn btn-primary btn-magnetic active">
+          <span>Book Appointment</span>
+        </a>
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="section-padding" style="background: linear-gradient(135deg, var(--color-primary-950) 0%, var(--color-primary-900) 100%); color: #fff; padding-top: clamp(3rem, 5vw, 5rem); padding-bottom: clamp(3rem, 5vw, 5rem);">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <div class="section-label dark" style="margin-left: auto; margin-right: auto;">Instant Online Scheduling</div>
+      <h1 style="color: #fff; margin-bottom: var(--spacing-3);">Schedule Doctor Consultation</h1>
+      <p style="color: var(--color-text-inverse-muted); font-size: var(--font-size-base);">
+        Choose your clinical department, preferred specialist surgeon or physician, and reserve an in-hospital OPD or teleconsultation slot with instant SMS confirmation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Booking Wizard Section -->
+  <main id="main-content" style="background: var(--color-bg-alt); padding: var(--spacing-12) 0;">
+    <div class="container" style="max-width: 800px;">
+      
+      <div style="background: #ffffff; border-radius: var(--radius-3xl); box-shadow: var(--shadow-xl); border: 1px solid var(--border-light); padding: clamp(1.5rem, 4vw, 3rem);">
+        
+        <!-- Wizard Progress Bar -->
+        <div class="wizard-progress" style="margin-bottom: var(--spacing-8);">
+          <div class="wizard-step-bullet active" id="bullet-1">1</div>
+          <div class="wizard-step-bullet" id="bullet-2">2</div>
+          <div class="wizard-step-bullet" id="bullet-3">3</div>
+          <div class="wizard-step-bullet" id="bullet-4">4</div>
+        </div>
+
+        <form id="standalone-appointment-form" onsubmit="return false;">
+
+          <!-- STEP 1: Department & Doctor -->
+          <div class="form-step active" id="step-1">
+            <h3 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-4);">1. Select Speciality & Doctor</h3>
+
+            <div class="form-group">
+              <label for="page-apt-department" class="form-label">Clinical Department *</label>
+              <select id="page-apt-department" class="form-control" required>
+                <option value="">-- Choose Department --</option>
+                <option value="orthopaedics">Orthopaedics & Joint Replacement</option>
+                <option value="cardiology">Cardiology & Heart Care</option>
+                <option value="surgery">Laparoscopic & GI Surgery</option>
+                <option value="gynaecology">Obstetrics & Gynaecology</option>
+                <option value="neurology">Neurology & Spine Care</option>
+                <option value="critical-care">Intensive & Critical Care</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="page-apt-doctor" class="form-label">Specialist Consultant *</label>
+              <select id="page-apt-doctor" class="form-control" required>
+                <option value="">-- Select Specialist Doctor --</option>
+                <option value="dr-rk-dhawan">Dr. R. K. Dhawan (Chief Orthopaedic Surgeon)</option>
+                <option value="dr-sunita-dhawan">Dr. Sunita Dhawan (Senior Gynaecologist)</option>
+                <option value="dr-arvind-mehta">Dr. Arvind Mehta (Chief Cardiologist)</option>
+                <option value="dr-priya-sharma">Dr. Priya Sharma (Senior Laparoscopic Surgeon)</option>
+                <option value="dr-vikram-sen">Dr. Vikramaditya Sen (Consultant Neurologist)</option>
+                <option value="dr-ananya-verma">Dr. Ananya Verma (Chief Intensivist)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Consultation Mode</label>
+              <div style="display: flex; gap: var(--spacing-6);">
+                <label style="display: flex; align-items: center; gap: var(--spacing-2); font-size: var(--font-size-sm); cursor: pointer;">
+                  <input type="radio" name="page-mode" value="in-person" checked> In-Hospital OPD Visit
+                </label>
+                <label style="display: flex; align-items: center; gap: var(--spacing-2); font-size: var(--font-size-sm); cursor: pointer;">
+                  <input type="radio" name="page-mode" value="telehealth"> Video / Teleconsultation
+                </label>
+              </div>
+            </div>
+
+            <div class="form-footer-actions">
+              <div></div>
+              <button type="button" class="btn btn-primary" id="btn-next-1">
+                <span>Continue to Date & Time</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2: Date & Time Slot -->
+          <div class="form-step" id="step-2">
+            <h3 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-4);">2. Select Date & Preferred Slot</h3>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="page-apt-date" class="form-label">Preferred Date *</label>
+                <input type="date" id="page-apt-date" class="form-control" required value="2026-08-22">
+              </div>
+              <div class="form-group">
+                <label for="page-apt-time" class="form-label">Time Window *</label>
+                <select id="page-apt-time" class="form-control" required>
+                  <option value="">-- Choose Slot --</option>
+                  <option value="Morning (10:00 AM - 12:00 PM)" selected>Morning (10:00 AM - 12:00 PM)</option>
+                  <option value="Afternoon (01:00 PM - 03:00 PM)">Afternoon (01:00 PM - 03:00 PM)</option>
+                  <option value="Evening (04:00 PM - 07:00 PM)">Evening (04:00 PM - 07:00 PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="background: var(--color-accent-50); border: 1px solid var(--color-accent-100); padding: var(--spacing-4); border-radius: var(--radius-xl); font-size: var(--font-size-xs); color: var(--color-accent-600); margin-top: var(--spacing-4);">
+              ℹ️ Consultation duration is typically 20-30 minutes. Please arrive 10 minutes before your slot.
+            </div>
+
+            <div class="form-footer-actions">
+              <button type="button" class="btn btn-secondary" id="btn-prev-2">Back</button>
+              <button type="button" class="btn btn-primary" id="btn-next-2">
+                <span>Continue to Patient Details</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3: Patient Information -->
+          <div class="form-step" id="step-3">
+            <h3 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-4);">3. Patient Contact & Medical Notes</h3>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="page-apt-name" class="form-label">Patient Full Name *</label>
+                <input type="text" id="page-apt-name" class="form-control" placeholder="Ramesh Sharma" required value="Ramesh Sharma">
+              </div>
+              <div class="form-group">
+                <label for="page-apt-phone" class="form-label">Mobile / WhatsApp Number *</label>
+                <input type="tel" id="page-apt-phone" class="form-control" placeholder="+91 98765 43210" required value="+91 98765 43210">
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="page-apt-email" class="form-label">Email Address</label>
+                <input type="email" id="page-apt-email" class="form-control" placeholder="ramesh@example.com">
+              </div>
+              <div class="form-group">
+                <label for="page-apt-age" class="form-label">Age & Gender</label>
+                <input type="text" id="page-apt-age" class="form-control" placeholder="52 Yrs, Male" value="52 Yrs, Male">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="page-apt-notes" class="form-label">Reason for Visit / Past History</label>
+              <textarea id="page-apt-notes" class="form-control" rows="3" placeholder="Describe symptoms or ongoing medications..."></textarea>
+            </div>
+
+            <div class="form-footer-actions">
+              <button type="button" class="btn btn-secondary" id="btn-prev-3">Back</button>
+              <button type="button" class="btn btn-primary" id="btn-next-3">
+                <span>Confirm & Generate Booking Slip</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 4: Confirmation Slip -->
+          <div class="form-step" id="step-4">
+            <div style="text-align: center; margin-bottom: var(--spacing-6);">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--color-success-50); color: var(--color-success-600); display: inline-flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: var(--spacing-3);">✓</div>
+              <h3 style="font-size: var(--font-size-2xl); margin-bottom: 4px;">Appointment Confirmed!</h3>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">Your consultation slot has been reserved in our hospital OPD management system.</p>
+            </div>
+
+            <div id="page-confirmation-card">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="site-brand" style="margin-bottom: var(--spacing-4);">
+            <div class="brand-crest"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M2 12h20M7 7l10 10M17 7L7 17"></path></svg></div>
+            <div class="brand-text"><span class="brand-name" style="color: #fff;">DHAWAN HOSPITAL</span><span class="brand-tagline">Super Speciality Care</span></div>
+          </div>
+          <p style="color: var(--color-text-inverse-muted); font-size: var(--font-size-sm);">Premier multi-speciality surgical centre providing 24/7 Level-1 Trauma Emergency Care and NABH accredited medical excellence.</p>
+        </div>
+        <div>
+          <h4 style="color: #fff; font-size: var(--font-size-base); margin-bottom: var(--spacing-4);">Quick Links</h4>
+          <ul style="display: flex; flex-direction: column; gap: var(--spacing-2); font-size: var(--font-size-sm);">
+            <li><a href="about.html" style="color: var(--color-text-inverse-muted);">About Us</a></li>
+            <li><a href="facilities.html" style="color: var(--color-text-inverse-muted);">Hospital Facilities</a></li>
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Specialities</a></li>
+            <li><a href="doctors.html" style="color: var(--color-text-inverse-muted);">Doctors</a></li>
+            <li><a href="gallery.html" style="color: var(--color-text-inverse-muted);">Gallery</a></li>
+            <li><a href="contact.html" style="color: var(--color-text-inverse-muted);">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: #fff; font-size: var(--font-size-base); margin-bottom: var(--spacing-4);">Key Departments</h4>
+          <ul style="display: flex; flex-direction: column; gap: var(--spacing-2); font-size: var(--font-size-sm);">
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Orthopaedics & Joint Care</a></li>
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Cardiology & Heart Care</a></li>
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Laparoscopic Surgery</a></li>
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Obstetrics & Gynaecology</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: #fff; font-size: var(--font-size-base); margin-bottom: var(--spacing-4);">Emergency Contact</h4>
+          <p style="color: var(--color-text-inverse-muted); font-size: var(--font-size-sm);">24/7 Trauma Line: <a href="tel:1066" style="color: #f87171; font-weight: bold;">+91 (0172) 256-7890 / 1066</a></p>
+          <p style="color: var(--color-text-inverse-muted); font-size: var(--font-size-sm);">Plot No. 1, Sector 7, Chandigarh Road, Panchkula</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Dhawan Hospital. All Rights Reserved. NABH Accredited.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+
+  <!-- Standalone Appointment Controller -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Auto pre-fill from URL params
+      const params = new URLSearchParams(window.location.search);
+      const urlDept = params.get('dept');
+      const urlDoc = params.get('doctor');
+
+      const deptEl = document.getElementById('page-apt-department');
+      const docEl = document.getElementById('page-apt-doctor');
+
+      if (urlDept && deptEl) deptEl.value = urlDept;
+      if (urlDoc && docEl) docEl.value = urlDoc;
+
+      // Multi-step navigation
+      const step1 = document.getElementById('step-1');
+      const step2 = document.getElementById('step-2');
+      const step3 = document.getElementById('step-3');
+      const step4 = document.getElementById('step-4');
+
+      const b1 = document.getElementById('bullet-1');
+      const b2 = document.getElementById('bullet-2');
+      const b3 = document.getElementById('bullet-3');
+      const b4 = document.getElementById('bullet-4');
+
+      document.getElementById('btn-next-1')?.addEventListener('click', () => {
+        if (!deptEl.value) return alert('Please select a department.');
+        if (!docEl.value) return alert('Please select a doctor.');
+        step1.classList.remove('active');
+        step2.classList.add('active');
+        b1.classList.add('completed');
+        b2.classList.add('active');
+      });
+
+      document.getElementById('btn-prev-2')?.addEventListener('click', () => {
+        step2.classList.remove('active');
+        step1.classList.add('active');
+        b2.classList.remove('active');
+        b1.classList.add('active');
+      });
+
+      document.getElementById('btn-next-2')?.addEventListener('click', () => {
+        const date = document.getElementById('page-apt-date').value;
+        const time = document.getElementById('page-apt-time').value;
+        if (!date || !time) return alert('Please choose date and time slot.');
+        step2.classList.remove('active');
+        step3.classList.add('active');
+        b2.classList.add('completed');
+        b3.classList.add('active');
+      });
+
+      document.getElementById('btn-prev-3')?.addEventListener('click', () => {
+        step3.classList.remove('active');
+        step2.classList.add('active');
+        b3.classList.remove('active');
+        b2.classList.add('active');
+      });
+
+      document.getElementById('btn-next-3')?.addEventListener('click', () => {
+        const name = document.getElementById('page-apt-name').value.trim();
+        const phone = document.getElementById('page-apt-phone').value.trim();
+        if (!name || !phone) return alert('Please enter patient name and contact phone.');
+
+        step3.classList.remove('active');
+        step4.classList.add('active');
+        b3.classList.add('completed');
+        b4.classList.add('active', 'completed');
+
+        // Render confirmation slip
+        const ref = 'DHM-OPD-' + Math.floor(100000 + Math.random() * 900000);
+        const deptText = deptEl.options[deptEl.selectedIndex].text;
+        const docText = docEl.options[docEl.selectedIndex].text;
+        const dateVal = document.getElementById('page-apt-date').value;
+        const timeVal = document.getElementById('page-apt-time').value;
+
+        document.getElementById('page-confirmation-card').innerHTML = `
+          <div style="background: var(--color-bg-alt); border-radius: var(--radius-2xl); padding: 1.5rem; border: 1px solid var(--border-light); margin-bottom: 1.5rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed var(--border-medium); padding-bottom: 1rem; margin-bottom: 1rem;">
+              <div>
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-text-muted); font-weight: 700;">Booking Reference ID</span>
+                <div style="font-family: var(--font-family-display); font-size: 1.5rem; font-weight: 800; color: var(--color-primary-900);">${ref}</div>
+              </div>
+              <span style="background: var(--color-success-50); color: var(--color-success-600); font-weight: 700; font-size: 0.8rem; padding: 0.35rem 0.85rem; border-radius: 999px;">Confirmed</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; font-size: 0.875rem;">
+              <div><strong>Patient:</strong> <span style="color: var(--color-text-secondary);">${name}</span></div>
+              <div><strong>Phone:</strong> <span style="color: var(--color-text-secondary);">${phone}</span></div>
+              <div><strong>Department:</strong> <span style="color: var(--color-text-secondary);">${deptText}</span></div>
+              <div><strong>Doctor:</strong> <span style="color: var(--color-text-secondary);">${docText}</span></div>
+              <div><strong>Date:</strong> <span style="color: var(--color-text-secondary);">${dateVal}</span></div>
+              <div><strong>Slot:</strong> <span style="color: var(--color-text-secondary);">${timeVal}</span></div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <button type="button" class="btn btn-primary" onclick="window.print();">
+              🖨️ Print / Save OPD Slip
+            </button>
+            <a href="index.html" class="btn btn-secondary">
+              Back to Home
+            </a>
+          </div>
+        `;
+      });
+    });
+  </script>
+</body>
+</html>

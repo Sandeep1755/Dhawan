@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Centres of Clinical Excellence - Explore Dhawan Hospital's specialized medical and surgical departments including Orthopaedics, Cardiology, Laparoscopy, and Gynaecology.">
+  <meta name="keywords" content="Dhawan Hospital Departments, Orthopaedics Panchkula, Cardiology Panchkula, Laparoscopic Surgery, Obstetrics Gynaecology">
+  <meta name="theme-color" content="#07172e">
+
+  <title>Clinical Departments & Specialities | Dhawan Hospital</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true"></div>
+  <div class="cursor-label" aria-hidden="true"></div>
+
+  <!-- Top Emergency Bar -->
+  <aside class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <div class="emergency-ticker">
+          <span class="emergency-dot"></span>
+          <span>24/7 Trauma & Emergency: <strong>+91 (0172) 256-7890 / 1066</strong></span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-link">OPD Hours: Mon - Sat (8:00 AM - 8:00 PM)</span>
+        <a href="contact.html" class="top-bar-link">Hospital Location & Maps</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="site-brand">
+        <div class="brand-crest">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M2 12h20M7 7l10 10M17 7L7 17"></path></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">DHAWAN HOSPITAL</span>
+          <span class="brand-tagline">Super Speciality Care</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+          <li><a href="departments.html" class="nav-link active">Departments</a></li>
+          <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+          <li><a href="patient-journey.html" class="nav-link">Patient Guide</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:1066" class="btn-header-emergency">
+          <span>Emergency 24x7</span>
+        </a>
+        <a href="appointment.html" class="btn btn-primary btn-magnetic">
+          <span>Book Appointment</span>
+        </a>
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="section-padding" style="background: linear-gradient(135deg, var(--color-primary-950) 0%, var(--color-primary-900) 100%); color: #fff; padding-top: clamp(4rem, 6vw, 6rem); padding-bottom: clamp(4rem, 6vw, 6rem);">
+    <div class="container" style="text-align: center; max-width: 840px;">
+      <div class="section-label dark" style="margin-left: auto; margin-right: auto;">Medical & Surgical Specialities</div>
+      <h1 style="color: #fff; margin-bottom: var(--spacing-4);">Centres of Clinical Excellence</h1>
+      <p style="color: var(--color-text-inverse-muted); font-size: var(--font-size-lg);">
+        Explore our multi-disciplinary medical departments, advanced surgical protocols, specialized OPD clinics, and leading consultant specialists.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <section class="section-padding" style="background: #ffffff;">
+      <div class="container">
+
+        <!-- Department Filter Tabs -->
+        <div class="departments-filter-bar" role="tablist">
+          <button type="button" class="filter-btn active" data-filter="all">All Specialities (10)</button>
+          <button type="button" class="filter-btn" data-filter="ortho">Orthopaedics & Joint</button>
+          <button type="button" class="filter-btn" data-filter="cardio">Cardiology</button>
+          <button type="button" class="filter-btn" data-filter="surgery">Laparoscopic Surgery</button>
+          <button type="button" class="filter-btn" data-filter="gynae">Obstetrics & Gynae</button>
+          <button type="button" class="filter-btn" data-filter="neuro">Neurology & Spine</button>
+          <button type="button" class="filter-btn" data-filter="critical">Critical Care & ICU</button>
+        </div>
+
+        <!-- Comprehensive Departments Grid -->
+        <div class="departments-grid">
+
+          <!-- Dept 1: Orthopaedics -->
+          <article class="department-card" data-category="ortho">
+            <div>
+              <div class="dept-icon-wrapper"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div>
+              <h3 class="dept-name">Orthopaedics & Joint Replacement</h3>
+              <p class="dept-desc">Internationally recognized surgical centre for Robotic Total Knee & Hip Replacement, arthroscopic ligament reconstruction, and complex poly-trauma.</p>
+              <div class="dept-services-list">
+                <span class="dept-service-item">• Robotic & Navigated Total Knee Arthroplasty (TKR)</span>
+                <span class="dept-service-item">• Primary & Revision Total Hip Arthroplasty (THR)</span>
+                <span class="dept-service-item">• Arthroscopic Keyhole ACL/PCL/Meniscus Repairs</span>
+                <span class="dept-service-item">• In-house Post-Surgical Physiotherapy & Rehab</span>
+              </div>
+            </div>
+            <div class="dept-footer">
+              <span class="opd-badge">Chief: Dr. R. K. Dhawan</span>
+              <a href="appointment.html?dept=orthopaedics" class="btn btn-primary btn-sm"><span>Book OPD</span></a>
+            </div>
+          </article>
+
+          <!-- Dept 2: Cardiology -->
+          <article class="department-card" data-category="cardio">
+            <div>
+              <div class="dept-icon-wrapper"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+              <h3 class="dept-name">Cardiology & Heart Institute</h3>
+              <p class="dept-desc">Comprehensive cardiovascular care including 2D Echocardiography, Stress Thallium, TMT, Holter monitoring, acute coronary triage, and heart failure clinics.</p>
+              <div class="dept-services-list">
+                <span class="dept-service-item">• High-Resolution 2D/3D Color Doppler Echo</span>
+                <span class="dept-service-item">• Treadmill Stress Testing (TMT) & 24-hr Holter</span>
+                <span class="dept-service-item">• Preventive Hypertension & Lipidology Clinic</span>
+                <span class="dept-service-item">• Post-Angioplasty & Bypass Rehabilitation</span>
+              </div>
+            </div>
+            <div class="dept-footer">
+              <span class="opd-badge">Chief: Dr. Arvind Mehta</span>
+              <a href="appointment.html?dept=cardiology" class="btn btn-primary btn-sm"><span>Book OPD</span></a>
+            </div>
+          </article>
+
+          <!-- Dept 3: Laparoscopic & GI Surgery -->
+          <article class="department-card" data-category="surgery">
+            <div>
+              <div class="dept-icon-wrapper"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg></div>
+              <h3 class="dept-name">Laparoscopic & GI Surgery</h3>
+              <p class="dept-desc">Pioneering minimally invasive keyhole procedures for gallbladder stones, complex abdominal hernias, appendicitis, and gastrointestinal tumors.</p>
+              <div class="dept-services-list">
+                <span class="dept-service-item">• Laparoscopic Cholecystectomy (Gallbladder Removal)</span>
+                <span class="dept-service-item">• Laparoscopic TEP/TAPP Inguinal & Ventral Hernia</span>
+                <span class="dept-service-item">• Laser Proctology for Piles, Fissure & Fistula</span>
+                <span class="dept-service-item">• Gastrointestinal & Colorectal Resections</span>
+              </div>
+            </div>
+            <div class="dept-footer">
+              <span class="opd-badge">Senior: Dr. Priya Sharma</span>
+              <a href="appointment.html?dept=surgery" class="btn btn-primary btn-sm"><span>Book OPD</span></a>
+            </div>
+          </article>
+
+          <!-- Dept 4: Obstetrics & Gynaecology -->
+          <article class="department-card" data-category="gynae">
+            <div>
+              <div class="dept-icon-wrapper"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg></div>
+              <h3 class="dept-name">Obstetrics, Gynaecology & IVF</h3>
+              <p class="dept-desc">Holistic women's wellness covering high-risk maternal delivery, painless epidural labor, total laparoscopic hysterectomy (TLH), and infertility evaluation.</p>
+              <div class="dept-services-list">
+                <span class="dept-service-item">• High-Risk Pregnancy & Painless Delivery Suites</span>
+                <span class="dept-service-item">• Total Laparoscopic Hysterectomy (TLH) & Myomectomy</span>
+                <span class="dept-service-item">• Infertility Evaluation, Follicular Tracking & IUI</span>
+                <span class="dept-service-item">• Adolescent & Menopausal Health Management</span>
+              </div>
+            </div>
+            <div class="dept-footer">
+              <span class="opd-badge">Senior: Dr. Sunita Dhawan</span>
+              <a href="appointment.html?dept=gynaecology" class="btn btn-primary btn-sm"><span>Book OPD</span></a>
+            </div>
+          </article>
+
+          <!-- Dept 5: Neurology & Spine Care -->
+          <article class="department-card" data-category="neuro">
+            <div>
+              <div class="dept-icon-wrapper"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"></circle><line x1="12" y1="2" x2="12" y2="4"></line><line x1="12" y1="20" x2="12" y2="22"></line><line x1="20" y1="12" x2="22" y2="12"></line><line x1="2" y1="12" x2="4" y2="12"></line></svg></div>
+              <h3 class="dept-name">Neurology & Micro-Spine Care</h3>
+              <p class="dept-desc">Advanced neurological diagnostic wing and surgical management for acute ischemic stroke, epilepsy, sciatica, disc herniations, and spinal stenosis.</p>
+              <div class="dept-services-list">
+                <span class="dept-service-item">• 24/7 Acute Ischemic Stroke Thrombolysis Unit</span>
+                <span class="dept-service-item">• Microscopic Lumbar & Cervical Discectomy</span>
+                <span class="dept-service-item">• Digital Video EEG, EMG & Nerve Conduction Studies</span>
+                <span class="dept-service-item">• Parkinson's, Tremor & Movement Disorder Clinic</span>
+              </div>
+            </div>
+            <div class="dept-footer">
+              <span class="opd-badge">Consultant: Dr. Vikram Sen</span>
+              <a href="appointment.html?dept=neurology" class="btn btn-primary btn-sm"><span>Book OPD</span></a>
+            </div>
+          </article>
+
+          <!-- Dept 6: Critical Care & ICU -->
+          <article class="department-card" data-category="critical">
+            <div>
+              <div class="dept-icon-wrapper"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div>
+              <h3 class="dept-name">Level-III Intensive Care (ICU/CCU)</h3>
+              <p class="dept-desc">Round-the-clock intensivist coverage for severe sepsis, ARDS, polytrauma resuscitation, cardiac arrest recovery, and complex post-operative monitoring.</p>
+              <div class="dept-services-list">
+                <span class="dept-service-item">• Dedicated 1:1 Specialist Critical Care Nursing</span>
+                <span class="dept-service-item">• Invasive Arterial & Central Venous Pressure Monitoring</span>
+                <span class="dept-service-item">• Bedside Continuous Renal Replacement Therapy (CRRT)</span>
+                <span class="dept-service-item">• Ultra-Modern HEPA-14 Clean Air Environments</span>
+              </div>
+            </div>
+            <div class="dept-footer">
+              <span class="opd-badge">Chief: Dr. Ananya Verma</span>
+              <a href="appointment.html?dept=critical-care" class="btn btn-primary btn-sm"><span>Book OPD</span></a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="site-brand" style="margin-bottom: var(--spacing-4);">
+            <div class="brand-crest"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M2 12h20M7 7l10 10M17 7L7 17"></path></svg></div>
+            <div class="brand-text"><span class="brand-name" style="color: #fff;">DHAWAN HOSPITAL</span><span class="brand-tagline">Super Speciality Care</span></div>
+          </div>
+          <p style="color: var(--color-text-inverse-muted); font-size: var(--font-size-sm);">Premier multi-speciality surgical centre providing 24/7 Level-1 Trauma Emergency Care and NABH accredited medical excellence.</p>
+        </div>
+        <div>
+          <h4 style="color: #fff; font-size: var(--font-size-base); margin-bottom: var(--spacing-4);">Quick Links</h4>
+          <ul style="display: flex; flex-direction: column; gap: var(--spacing-2); font-size: var(--font-size-sm);">
+            <li><a href="about.html" style="color: var(--color-text-inverse-muted);">About Us</a></li>
+            <li><a href="facilities.html" style="color: var(--color-text-inverse-muted);">Hospital Facilities</a></li>
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Specialities</a></li>
+            <li><a href="doctors.html" style="color: var(--color-text-inverse-muted);">Doctors</a></li>
+            <li><a href="gallery.html" style="color: var(--color-text-inverse-muted);">Gallery</a></li>
+            <li><a href="contact.html" style="color: var(--color-text-inverse-muted);">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: #fff; font-size: var(--font-size-base); margin-bottom: var(--spacing-4);">Key Departments</h4>
+          <ul style="display: flex; flex-direction: column; gap: var(--spacing-2); font-size: var(--font-size-sm);">
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Orthopaedics & Joint Care</a></li>
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Cardiology & Heart Care</a></li>
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Laparoscopic Surgery</a></li>
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Obstetrics & Gynaecology</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: #fff; font-size: var(--font-size-base); margin-bottom: var(--spacing-4);">Emergency Contact</h4>
+          <p style="color: var(--color-text-inverse-muted); font-size: var(--font-size-sm);">24/7 Trauma Line: <a href="tel:1066" style="color: #f87171; font-weight: bold;">+91 (0172) 256-7890 / 1066</a></p>
+          <p style="color: var(--color-text-inverse-muted); font-size: var(--font-size-sm);">Plot No. 1, Sector 7, Chandigarh Road, Panchkula</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Dhawan Hospital. All Rights Reserved. NABH Accredited.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

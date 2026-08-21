@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clinical Photo Gallery - High-resolution visual tour of Dhawan Hospital's modular OTs, Level-III ICU, 128-slice CT diagnostics, and deluxe suites.">
+  <meta name="keywords" content="Dhawan Hospital Photos, Hospital Gallery, Modular OT Photos, Hospital Tour Panchkula">
+  <meta name="theme-color" content="#07172e">
+
+  <title>Hospital Photo & Clinical Gallery | Dhawan Hospital</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true"></div>
+  <div class="cursor-label" aria-hidden="true"></div>
+
+  <!-- Top Emergency Bar -->
+  <aside class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <div class="emergency-ticker">
+          <span class="emergency-dot"></span>
+          <span>24/7 Trauma & Emergency: <strong>+91 (0172) 256-7890 / 1066</strong></span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-link">OPD Hours: Mon - Sat (8:00 AM - 8:00 PM)</span>
+        <a href="contact.html" class="top-bar-link">Hospital Location & Maps</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="site-brand">
+        <div class="brand-crest">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M2 12h20M7 7l10 10M17 7L7 17"></path></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">DHAWAN HOSPITAL</span>
+          <span class="brand-tagline">Super Speciality Care</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+          <li><a href="departments.html" class="nav-link">Departments</a></li>
+          <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+          <li><a href="patient-journey.html" class="nav-link">Patient Guide</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:1066" class="btn-header-emergency">
+          <span>Emergency 24x7</span>
+        </a>
+        <a href="appointment.html" class="btn btn-primary btn-magnetic">
+          <span>Book Appointment</span>
+        </a>
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="section-padding" style="background: linear-gradient(135deg, var(--color-primary-950) 0%, var(--color-primary-900) 100%); color: #fff; padding-top: clamp(4rem, 6vw, 6rem); padding-bottom: clamp(4rem, 6vw, 6rem);">
+    <div class="container" style="text-align: center; max-width: 840px;">
+      <div class="section-label dark" style="margin-left: auto; margin-right: auto;">Visual Hospital Tour</div>
+      <h1 style="color: #fff; margin-bottom: var(--spacing-4);">Clinical & Infrastructure Gallery</h1>
+      <p style="color: var(--color-text-inverse-muted); font-size: var(--font-size-lg);">
+        A photographic showcase of our clean surgical suites, intensive care units, advanced diagnostics, and peaceful healing spaces. Click any photo to expand.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <section class="section-padding" style="background: #ffffff;">
+      <div class="container">
+
+        <!-- Category Tabs -->
+        <div class="departments-filter-bar" role="tablist">
+          <button type="button" class="filter-btn active" data-gallery-filter="all">All Photos (8)</button>
+          <button type="button" class="filter-btn" data-gallery-filter="ot">Operation Theatres</button>
+          <button type="button" class="filter-btn" data-gallery-filter="icu">Intensive Care (ICU)</button>
+          <button type="button" class="filter-btn" data-gallery-filter="diagnostics">Diagnostics & CT</button>
+          <button type="button" class="filter-btn" data-gallery-filter="rooms">Patient Suites</button>
+          <button type="button" class="filter-btn" data-gallery-filter="triage">Emergency Triage</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="full-gallery-grid">
+
+          <div class="gallery-item-card" data-category="ot" data-caption="Modular Laminar Flow Operation Theatre with 4K Karl Storz Towers" data-full-img="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80" alt="Modular Laminar Operation Theatre" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div>
+                <div class="gallery-caption-title">Modular Operation Theatre</div>
+                <div class="gallery-caption-cat">Surgical Wing • Laminar Flow</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item-card" data-category="icu" data-caption="Level-III Intensive Care Unit (ICU) with Draeger Ventilators & Central Telemetry" data-full-img="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=600&q=80" alt="Level-III Intensive Care Unit" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div>
+                <div class="gallery-caption-title">Intensive Care Unit (ICU)</div>
+                <div class="gallery-caption-cat">Critical Care • Level III</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item-card" data-category="diagnostics" data-caption="128-Slice High-Speed Multi-Detector CT Scanner Wing" data-full-img="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=600&q=80" alt="128-Slice CT Scanner" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div>
+                <div class="gallery-caption-title">128-Slice CT Imaging Wing</div>
+                <div class="gallery-caption-cat">Radiology & Diagnostics</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item-card" data-category="rooms" data-caption="Executive Inpatient Private Suite with Ergonomic Recovery Amenities" data-full-img="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=600&q=80" alt="Inpatient Private Suite" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div>
+                <div class="gallery-caption-title">Deluxe Patient Suite</div>
+                <div class="gallery-caption-cat">Inpatient Recovery</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item-card" data-category="triage" data-caption="24/7 Level-1 Emergency Resuscitation Bay with Crash Carts" data-full-img="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=600&q=80" alt="24/7 Emergency Resuscitation Bay" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div>
+                <div class="gallery-caption-title">Emergency Trauma Centre</div>
+                <div class="gallery-caption-cat">24/7 Acute Care</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item-card" data-category="ot" data-caption="Advanced Keyhole Endoscopy and Laparoscopic Suite" data-full-img="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=600&q=80" alt="Laparoscopic Endoscopy Suite" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div>
+                <div class="gallery-caption-title">Minimally Invasive Suite</div>
+                <div class="gallery-caption-cat">Endoscopy & Keyhole</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item-card" data-category="diagnostics" data-caption="Automated Clinical Pathology & Biochemistry Laboratory" data-full-img="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80" alt="Pathology Laboratory" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div>
+                <div class="gallery-caption-title">Automated Pathology Lab</div>
+                <div class="gallery-caption-cat">Digital Blood Diagnostics</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item-card" data-category="rooms" data-caption="Hospital Main Reception & Patient Guidance Hub" data-full-img="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80" alt="Hospital Reception" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div>
+                <div class="gallery-caption-title">Hospital Reception & Lounge</div>
+                <div class="gallery-caption-cat">Patient Triage Hub</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div class="lightbox-modal" id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Clinical photo preview">
+    <button type="button" class="lightbox-close" aria-label="Close photo preview">✕</button>
+    <div class="lightbox-content">
+      <img src="" alt="Dhawan Hospital Expanded View" class="lightbox-img">
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="site-brand" style="margin-bottom: var(--spacing-4);">
+            <div class="brand-crest"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M2 12h20M7 7l10 10M17 7L7 17"></path></svg></div>
+            <div class="brand-text"><span class="brand-name" style="color: #fff;">DHAWAN HOSPITAL</span><span class="brand-tagline">Super Speciality Care</span></div>
+          </div>
+          <p style="color: var(--color-text-inverse-muted); font-size: var(--font-size-sm);">Premier multi-speciality surgical centre providing 24/7 Level-1 Trauma Emergency Care and NABH accredited medical excellence.</p>
+        </div>
+        <div>
+          <h4 style="color: #fff; font-size: var(--font-size-base); margin-bottom: var(--spacing-4);">Quick Links</h4>
+          <ul style="display: flex; flex-direction: column; gap: var(--spacing-2); font-size: var(--font-size-sm);">
+            <li><a href="about.html" style="color: var(--color-text-inverse-muted);">About Us</a></li>
+            <li><a href="facilities.html" style="color: var(--color-text-inverse-muted);">Hospital Facilities</a></li>
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Specialities</a></li>
+            <li><a href="doctors.html" style="color: var(--color-text-inverse-muted);">Doctors</a></li>
+            <li><a href="gallery.html" style="color: var(--color-text-inverse-muted);">Gallery</a></li>
+            <li><a href="contact.html" style="color: var(--color-text-inverse-muted);">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: #fff; font-size: var(--font-size-base); margin-bottom: var(--spacing-4);">Key Departments</h4>
+          <ul style="display: flex; flex-direction: column; gap: var(--spacing-2); font-size: var(--font-size-sm);">
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Orthopaedics & Joint Care</a></li>
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Cardiology & Heart Care</a></li>
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Laparoscopic Surgery</a></li>
+            <li><a href="departments.html" style="color: var(--color-text-inverse-muted);">Obstetrics & Gynaecology</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: #fff; font-size: var(--font-size-base); margin-bottom: var(--spacing-4);">Emergency Contact</h4>
+          <p style="color: var(--color-text-inverse-muted); font-size: var(--font-size-sm);">24/7 Trauma Line: <a href="tel:1066" style="color: #f87171; font-weight: bold;">+91 (0172) 256-7890 / 1066</a></p>
+          <p style="color: var(--color-text-inverse-muted); font-size: var(--font-size-sm);">Plot No. 1, Sector 7, Chandigarh Road, Panchkula</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Dhawan Hospital. All Rights Reserved. NABH Accredited.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
